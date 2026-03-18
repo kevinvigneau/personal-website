@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kevin Vigneau</title>
+  <meta name="description" content="Kevin Vigneau — Commercial Mortgage Professional & Technology Enthusiast based in Toronto." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Nav ── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="#" class="nav-logo">kv<span class="cursor">_</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about"    class="nav-link">about</a></li>
+        <li><a href="#projects" class="nav-link">projects</a></li>
+        <li><a href="#blog"     class="nav-link">blog</a></li>
+        <li><a href="#contact"  class="nav-link">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ── Hero ── -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <p class="hero-tag">// hello, world</p>
+        <h1 class="hero-name">Kevin Vigneau</h1>
+        <p class="hero-sub">Commercial Mortgage Professional <span class="accent">&amp;</span> Technology Enthusiast</p>
+        <p class="hero-location">
+          <span class="hero-dot"></span>
+          Toronto, ON
+        </p>
+        <div class="hero-cta">
+          <a href="#about"   class="btn btn-primary">About me</a>
+          <a href="#contact" class="btn btn-secondary">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-grid" aria-hidden="true"></div>
+    </section>
+
+    <!-- ── About ── -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-prefix">01.</span> About
+        </h2>
+        <div class="about-body">
+          <div class="about-text">
+            <p>I'm a Canadian commercial mortgage professional with a focus on data and technology — leveraging information to create actionable insights for lenders.</p>
+            <p>I've spent time living on both the east and west coasts before settling in Toronto. Outside of finance and tech, I'm a runner, a cooking enthusiast, and someone who gets genuinely excited about new technologies.</p>
+          </div>
+          <div class="about-chips">
+            <span class="chip">Commercial Real Estate</span>
+            <span class="chip">Data &amp; Analytics</span>
+            <span class="chip">AI &amp; Automation</span>
+            <span class="chip">Running</span>
+            <span class="chip">Cooking</span>
+            <span class="chip">Toronto</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Projects ── -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-prefix">02.</span> Projects
+        </h2>
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <div class="project-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="2" y1="12" x2="22" y2="12"/>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+              </div>
+              <h3 class="project-title">Personal Website</h3>
+            </div>
+            <p class="project-desc">Built this personal website using Claude AI — exploring how AI-assisted development can accelerate building web projects from design to deployment.</p>
+            <div class="project-tags">
+              <span class="chip small">HTML / CSS / JS</span>
+              <span class="chip small">AI-Assisted</span>
+              <span class="chip small">Git</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <div class="project-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v2"/>
+                  <path d="M2 9h6"/><path d="M2 14h6"/><path d="M2 19h6"/>
+                  <path d="M2 4h6v5H2z"/>
+                </svg>
+              </div>
+              <h3 class="project-title">Canadian CRE Newsletter</h3>
+            </div>
+            <p class="project-desc">Automated newsletter using ChatGPT and Codex that gathers and curates the hottest stories in Canadian commercial real estate — delivered on Substack.</p>
+            <div class="project-tags">
+              <span class="chip small">AI</span>
+              <span class="chip small">Automation</span>
+              <span class="chip small">CRE</span>
+            </div>
+            <a href="https://substack.com/@kvigneau" target="_blank" rel="noopener noreferrer" class="project-link">
+              Read on Substack
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"/>
+                <polyline points="7 7 17 7 17 17"/>
+              </svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Blog ── -->
+    <section class="section" id="blog">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-prefix">03.</span> Blog
+        </h2>
+        <p class="section-desc">Thoughts on commercial real estate, data, technology, and more. Coming soon — in the meantime, follow my newsletter on Substack.</p>
+        <a href="https://substack.com/@kvigneau" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          Read the Newsletter
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <line x1="7" y1="17" x2="17" y2="7"/>
+            <polyline points="7 7 17 7 17 17"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ── Contact ── -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-prefix">04.</span> Contact
+        </h2>
+        <p class="section-desc">Feel free to reach out — whether it's about commercial real estate, a tech project, or just to connect.</p>
+        <div class="contact-grid">
+
+          <a href="mailto:k.vigneau123@gmail.com" class="contact-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact-label">Email</p>
+              <p class="contact-value">k.vigneau123@gmail.com</p>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/kevin-vigneau-bbab4214a/" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <p class="contact-value">Kevin Vigneau</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/kevinvigneau" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact-label">GitHub</p>
+              <p class="contact-value">@kevinvigneau</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2026 Kevin Vigneau</p>
+      <p class="footer-mono">// built with curiosity</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
