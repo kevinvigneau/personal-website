@@ -13,3 +13,8 @@ Thumbs.db
 
 # Dependencies (if you add Node later)
 node_modules/
+
+# Environment variables — never commit secrets
+.env
+.env.local
+.env*.local
