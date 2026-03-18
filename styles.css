@@ -18,7 +18,7 @@
 
   --nav-h:     64px;
   --max-w:     900px;
-  --section-y: 88px;
+  --section-y: 56px;
 }
 
 /* ─────────────────────────────────────────
@@ -145,8 +145,8 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .hero-inner {
   position: relative;
   z-index: 1;
-  padding-top: 60px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 56px;
 }
 
 .hero-tag {
@@ -297,11 +297,6 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 /* ─────────────────────────────────────────
    About
 ───────────────────────────────────────── */
-.about-body {
-  display: grid;
-  gap: 32px;
-}
-
 .about-text p {
   color: var(--text-muted);
   font-size: 1.05rem;
@@ -317,6 +312,31 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+
+/* ─────────────────────────────────────────
+   Headshot
+───────────────────────────────────────── */
+.about-body {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.about-headshot {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid var(--border);
+  display: block;
+}
+
+.about-right {
+  display: grid;
+  gap: 24px;
 }
 
 /* ─────────────────────────────────────────
@@ -500,7 +520,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 ───────────────────────────────────────── */
 @media (max-width: 640px) {
   :root {
-    --section-y: 60px;
+    --section-y: 40px;
   }
 
   /* Mobile nav drawer */
@@ -529,6 +549,15 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
   .nav-toggle {
     display: flex;
+  }
+
+  .about-body {
+    grid-template-columns: 1fr;
+  }
+
+  .about-headshot {
+    width: 120px;
+    height: 120px;
   }
 
   .projects-grid {
